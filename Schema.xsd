@@ -10,6 +10,23 @@
     </sequence>
 </complexType>
 
+<complexType name="TeamMemberType">
+    <sequence>
+        <element name="DisplayName" type="string" minOccurs="1" maxOccurs="1"/>
+        <element name="Email" type="string" minOccurs="1" maxOccurs="1"/>
+        <element name="Claims" type="string" minOccurs="1" maxOccurs="1"/>
+        <element name="Department" type="string" minOccurs="1" maxOccurs="1"/>
+     </sequence>
+</complexType>
+
+<complexType name="TeamType">
+    <sequence>
+        <element name="TeamMember" type="tns:TeamMemberType" minOccurs="0" maxOccurs="unbounded"/>
+    </sequence>
+</complexType>
+
+<element name="Team" type="tns:TeamType"/>
+
 <element name="Manager" type="tns:ManagerType"/>
 
 </schema>
