@@ -40,5 +40,12 @@
 
 <element name="Manager" type="tns:ManagerType"/>
 
+<simpleType name="ProjectEntityType">
+    <restriction base="string">
+        <enumeration value="Parent Project"/>
+        <enumeration value="Child Project"/>
+    </restriction>
+</simpleType>
+
 
 </schema>
