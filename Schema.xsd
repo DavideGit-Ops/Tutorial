@@ -40,10 +40,19 @@
 
 <element name="Manager" type="tns:ManagerType"/>
 
+<<<<<<< HEAD
 <simpleType name="ProjectEntityType">
     <restriction base="string">
         <enumeration value="Parent Project"/>
         <enumeration value="Child Project"/>
+=======
+<simpleType name="StatusType">
+    <restriction base="string">
+        <enumeration value="NEW"/>
+        <enumeration value="In Progress"/>
+        <enumeration value="Suspended"/>
+        <enumeration value="Completed"/>
+>>>>>>> e2a18e9 (Status type definition)
     </restriction>
 </simpleType>
 
