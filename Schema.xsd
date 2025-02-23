@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://tibco_SapOem_plm" targetNamespace="http://tibco_SapOem_plm" elementFormDefault="qualified">
+<<<<<<< HEAD
     <complexType name="ProjectType">
         <sequence>
             <element name="Title" type="string" minOccurs="1" maxOccurs="1"/>
@@ -8,5 +9,35 @@
     </complexType>
 
     <element name="Project" type="tns:ProjectType"/> 
+=======
+
+<complexType name="ManagerType">
+    <sequence>
+        <element name="DisplayName" type="string" minOccurs="1" maxOccurs="1"/>
+        <element name="Email" type="string" minOccurs="1" maxOccurs="1"/>
+        <element name="Claims" type="string" minOccurs="1" maxOccurs="1"/>
+        <element name="Department" type="string" minOccurs="1" maxOccurs="1"/>
+    </sequence>
+</complexType>
+
+<complexType name="TeamMemberType">
+    <sequence>
+        <element name="DisplayName" type="string" minOccurs="1" maxOccurs="1"/>
+        <element name="Email" type="string" minOccurs="1" maxOccurs="1"/>
+        <element name="Claims" type="string" minOccurs="1" maxOccurs="1"/>
+        <element name="Department" type="string" minOccurs="1" maxOccurs="1"/>
+     </sequence>
+</complexType>
+
+<complexType name="TeamType">
+    <sequence>
+        <element name="TeamMember" type="tns:TeamMemberType" minOccurs="0" maxOccurs="unbounded"/>
+    </sequence>
+</complexType>
+
+<element name="Team" type="tns:TeamType"/>
+
+<element name="Manager" type="tns:ManagerType"/>
+>>>>>>> feature
 
 </schema>
