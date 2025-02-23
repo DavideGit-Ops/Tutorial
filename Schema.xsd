@@ -7,6 +7,6 @@
         </sequence>
     </complexType>
 
-    
+    <element name="Project" type="tns:ProjectType"/> 
 
 </schema>
