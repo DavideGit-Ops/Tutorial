@@ -2,9 +2,11 @@
 <schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://tibco_SapOem_plm" targetNamespace="http://tibco_SapOem_plm" elementFormDefault="qualified">
     <complexType name="ProjectType">
         <sequence>
-            <element name="Title" type="string"/>
-            <element name="ProjectName" type="string"/>
+            <element name="Title" type="string" minOccurs="1" maxOccurs="1"/>
+            <element name="ProjectName" type="string" minOccurs="1" maxOccurs="1"/>
         </sequence>
     </complexType>
+
+    
 
 </schema>
