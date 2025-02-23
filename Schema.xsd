@@ -1,15 +1,16 @@
 <?xml version="1.0"?>
 <schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://tibco_SapOem_plm" targetNamespace="http://tibco_SapOem_plm" elementFormDefault="qualified">
-<<<<<<< HEAD
     <complexType name="ProjectType">
         <sequence>
-            <element name="Title" type="string" minOccurs="1" maxOccurs="1"/>
-            <element name="ProjectName" type="string" minOccurs="1" maxOccurs="1"/>
+            <element name="Title" type="string" minOccurs="1" maxOccurs="1" nillable="true"/>
+            <element name="ProjectName" type="string" minOccurs="1" maxOccurs="1" nillable="true"/>
+            <element name="Customer" type="string" minOccurs="1" maxOccurs="1" nillable="true"/>
+            <element name="Manager" type="tns:ManagerType" minOccurs="1" maxOccurs="1"/>
+            <element name="Team" type="tns:TeamType" minOccurs="1" maxOccurs="1" />
         </sequence>
     </complexType>
 
     <element name="Project" type="tns:ProjectType"/> 
-=======
 
 <complexType name="ManagerType">
     <sequence>
@@ -38,6 +39,6 @@
 <element name="Team" type="tns:TeamType"/>
 
 <element name="Manager" type="tns:ManagerType"/>
->>>>>>> feature
+
 
 </schema>
