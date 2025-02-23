@@ -1,4 +1,15 @@
 <?xml version="1.0"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://tibco_SapOem_plm" targetNamespace="http://tibco_SapOem_plm" elementFormDefault="qualified">
 
-</xs:schema>
+<complexType name="ManagerType">
+    <sequence>
+        <element name="DisplayName" type="string" minOccurs="1" maxOccurs="1"/>
+        <element name="Email" type="string" minOccurs="1" maxOccurs="1"/>
+        <element name="Claims" type="string" minOccurs="1" maxOccurs="1"/>
+        <element name="Department" type="string" minOccurs="1" maxOccurs="1"/>
+    </sequence>
+</complexType>
+
+<element name="Manager" type="tns:ManagerType"/>
+
+</schema>
